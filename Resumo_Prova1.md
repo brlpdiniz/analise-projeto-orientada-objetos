@@ -71,9 +71,108 @@
         - Herança múltipla: herda de vários objetos
 
 - EXERCÍCIO 2: Organize hierarquicamente em um diagrama as seguintes classes:
-    - 1.VeiculoTerrestre, 2.VeiculoAquático, 3.Carro, 4.Moto, 5.Barco, 6.NavioCargueiro, 7.Caminhão, 8.VeiculoAnfibio, 9.Submarino, 10.VeiculoAereo, 11.Aviao, 12.Veiculo, 13.HidroAviao, 
-### Levantamento Requisitos
+    - 1.VeiculoTerrestre, 2.VeiculoAquático, 3.Carro, 4.Moto, 5.Barco, 6.NavioCargueiro, 7.Caminhão, 8.VeiculoAnfibio, 9.Submarino, 10.VeiculoAereo, 11.Aviao, 12.Veiculo, 13.HidroAviao
 
+- EXERCÍCIO 3: Organize hierarquicamente em um diagrama as seguintes classes:
+    - 1. MembroDaEscola, Professor, Coordenador, Funcionário, Ex aluno, CorpoDiscente (*), AlunoDaGraduacao, AlunoDaPosGraduacao, Atendente, CorpoDocente, Segurança
+    - Discente é todo aluno regularmente matriculado, em regime de dependência ou trancado.
+
+------------------------------------------------------------------------------------------------
+
+- Polimorfismo
+    - É o princípio pelo qual classes derivadas de uma mesma superclasse podem invocar o “mesmo” método, porém com comportamentos distintos para cada uma das classes derivadas.
+    - Denota uma situação na qual um objeto pode se comportar de maneiras diferentes ao receber uma mensagem.
+    - Consiste em utilizar o mesmo nome do método dentro de uma classe, ou em uma hierarquia de classes, com comportamentos diferentes.
+    - É alcançado com auxílio do uso de herança nas classes e a reescrita de métodos das superclasses nas suas subclasses.
+
+##### Fundamentos de Modelagem OO
+- Descrição diagramática de algo a ser implementado em linguagem de programação
+    - Modelagem prescritiva: antes do código
+    - Modelagem descritiva: após o código
+
+- Ato de criar uma representação de algo do mundo real por meio de modelos, simplificação da realidade:
+    - Planta de uma casa representa mas não é a casa
+    - Modelagem de sistemas: representações do sistema que estamos desenvolvendo
+
+- OBJETIVOS:
+    - Especificar estrutura e/ ou o comportamento do sistema.
+        - Softwares complexos demandam planejamento. Os de baixa complexidade podem ser construídos direto.
+        - Proporcionar guia para construção.
+        - Documentar tomadas de decisões.
+
+- VANTAGENS:
+    - Descrição mais facilmente compreensível
+        - Mais próxima da forma como as pessoas pensam
+        - Não é natural “pensar” em linguagem de programação
+    
+    - Proporciona diferentes pontos de vista
+        - Descrição dos elementos que compõem um programa (estrutura)
+        - Descrição do programa em execução (dinâmica)
+        - Possibilidade de visão global
+        - Possibilidade de atenção a detalhes.
+
+##### O QUE TEMOS QUE APRENDER PARA MODELAR EM OO?
+- Conhecer os conceitos referentes a modelagem
+    - Saber porque modelar
+    - Conhecer os paradigmas de OO
+    - Conhecer os requisitos de uma modelagem completa
+    - Conhecer uma linguagem de modelagem
+    - Ex: UML e todos seus diagramas
+
+- Saber que passos seguir
+    - Saber usar a linguagem de modelagem adotada
+
+- Avaliar o que for produzido
+    - Avaliar consistência do todo
+    - Parâmetros de qualidade
+
+
+### Levantamento Requisitos
+- Primeiros passos para iniciar um sistema?
+    - Levantamento de requisitos
+    - É importante:
+        - Identificar o problema a ser resolvido.
+        -  Entender como o problema é tratado atualmente.
+        -  Investigar soluções existentes no mercado (concorrentes).
+        -  Perguntar aos usuários sobre a experiência atual.
+        -  Identificar características de usabilidade.PÓ
+    > Identifique necessidades dos usuários e estabeleça requisitos.
+
+- Requisitos
+    - É um mapeamento do que se espera que o sistema apresente.
+    - É uma condição ou capacidade para a qual um sistema deve atender.
+    - É como se fosse uma espécie de declaração de o que o sistema deve ter ou de como deveria operar.
+    - Não é fácil:
+        - Entender as funcionalidades;
+        - Listar necessidades futuras;
+        - Entender problemas que você não está familiarizado;
+        - Entender detalhes de processos;
+        - Ter a visão do todo.
+
+    - Exemplos de requisitos:
+        - Funcionalidades ao nível do usuário
+            - Emitir certificado de participação do aluno no evento da semana pedagógica.
+        - Propriedades gerais do sistema
+            - O sistema deverá manter um registro de toda consulta e alteração no cadastro.
+        - Uma regra de negócio
+            - A nota do aluno será a média aritmética simples entre as notas parciais.
+        - Restrições do sistema ou do seu desenvolvimento
+            - O sistema deve ser desenvolvido com ferramentas Microsoft®.
+            - O sistema deve atender as normas de acessibilidade existentes.
+    Atenção!
+        - O levantamento pode indicar visões diferentes e necessidades contraditórias;
+        - Usuários geralmente conhecem muito do negócio e pouco de sistema, enquanto que os analistas conhecem muito de sistemas e pouco do negócio;
+        - Usuários podem omitir informações, acreditando que é algo óbvio. 
+
+    - Requisitos são importantes para projetos de TI, pois são a base para:
+        - Definição de contratos;
+        - Elaboração/análise de propostas;
+        - Planejamento de atividades;
+        - Estimativas de custo;
+        - Modelagem do sistema;
+        - Desenvolvimento das funcionalidades.
+
+    - 
 
 
 
