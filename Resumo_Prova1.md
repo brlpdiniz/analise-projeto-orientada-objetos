@@ -35,7 +35,6 @@
 
     > Classes não são Objetos, mas a estrutura de um Objeto
 
-
     Classe Cachorro {
         Atributos {
             raça:
@@ -55,7 +54,7 @@
     Para cada conta de luz ele registra: data em que a leitura do relógio de luz foi realizada, número da leitura, quantidade de Kw gasto no mês, valor a pagar pela conta e data do pagamento.
     Mensalmente se pesquisam o mês de menor consumo e o de maior consumo
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 - Encapsulamento
     - Um dado está encapsulado quando envolvido por código de forma que, só é visível na rotina onde foi criado.
@@ -92,7 +91,7 @@
     - 1. MembroDaEscola, Professor, Coordenador, Funcionário, Ex aluno, CorpoDiscente (*), AlunoDaGraduacao, AlunoDaPosGraduacao, Atendente, CorpoDocente, Segurança
     - Discente é todo aluno regularmente matriculado, em regime de dependência ou trancado.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 - Polimorfismo
     - É o princípio pelo qual classes derivadas de uma mesma superclasse podem invocar o “mesmo” método, porém com comportamentos distintos para cada uma das classes derivadas.
@@ -229,7 +228,7 @@
     - Atividade: Identifique os requisitos funcionais e não funcionais:
         - “Um aplicativo de celular de emissão de passagens vende passagens de trem e avião. Quando o usuário entra no aplicativo, um menu com os possíveis destinos é mostrado ao usuário, junto com uma mensagem para que o usuário selecione um destino. Os usuários podem escolher seu destino a partir dessa lista. Os destinos sugeridos devem ser organizados de maneira a facilitar a escolha pelo usuário. Após a escolha do destino, o sistema deve responder prontamente se há poltrona disponível. Somente após essa verificação é solicitado ao usuário que informe o número de seu cartão de crédito e o código de segurança. O cartão é validado. Quando a transação de crédito é validada, a passagem é emitida. O formato do bilhete de passagem deve seguir o padrão definido pelo Sistema Nacional de Tráfego Ferroviário ou pelo Sistema Nacional de Tráfego Aéreo, a depender do transporte escolhido”.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 - Técnicas de levantamento de requisitos
     - Objetivo:
@@ -312,16 +311,236 @@
             * O que deve ser seguido
         - Regras da organização
 
-### Projeto OO e UML
+### Projeto OO e UML (LINGUAGEM DE MODELAGEM UNIFICADA!!)
+- Linguagem visual utilizada para modelar sistemas baseados no paradigma de orientação a objetos.
+- Incorpora noções do desenvolvimento de software totalmente visual e se baseia em diagramas que são modelados e classificados em visões de abstração.
+- Características:
+    - Os projetistas pensam em termos de coisas, em vez de funções.
+    - A funcionalidade do sistema é expressa em termos de serviços oferecidos pelos objetos.
+        - Objetos são abstrações do mundo real ou entidades do sistema que se auto gerenciam.
+        - Objetos se comunicam por passagem de mensagem.
+- Na fase de análise de um projeto OO, busca-se identificar objetos e descrevê-los.
 
+    Classe Livro {
+        Atributos {
+            titulo:
+            ano:
+            categoria:
+        }
+        Métodos {
+            emprestar()
+        }
+        return Objeto (conjunto de Atributo e Método)
+    }
 
+- Vantagens de um projeto OO:
+    - Facilidade de manutenção, onde os objetos podem ser entendidos como entidades independentes;
+    - Os objetos são componentes potencialmente reutilizáveis;
+    - Para vários sistemas existe um mapeamento nítido das entidades do mundo real para objetos no sistema
 
+- Visões UML:
+    - Mostram diferentes aspectos do sistema que está sendo modelado.
+        * VISÃO DE CASO DE USO
+        * VISÃO LÓGICA
+        * VISÃO DE IMPLEMENTAÇÃO
+        * VISÃO DE PROCESSOS
+        * VISÃO DE IMPLANTAÇÃO
 
+- Diagramas:
+    * Casos de uso: Expressam a funcionalidade de um sistema
+    * Atividades: Representam o fluxo de atividades dos processos de negócio
+
+- O desenvolvimento de um sistema em UML divide-se em cinco fases:
+    * Análise de requisitos
+    * Análise
+    * Design
+    * Implementação (programação)
+    * Testes
+
+- Rational Unified Process (RUP)
+     - É uma metodologia para desenvolvimento de processos que utiliza abordagem de orientação a objetos em sua concepção.
+    - Usa como base a notação UML para ilustrar os processos.
+    - FASES RUP
+        * Iniciação: Quando se especifica da visão do sistema e se define o escopo do sistema.
+        * Elaboração: Quando se faz o planejamento das atividades necessárias e dos recursos requeridos, bem como a especificação do sistema e o design da sua arquitetura. Foco na arquitetura.  
+        * Construção: Desenvolvimento do produto como uma série de interações incrementais. Desenvolver o sistema.
+        * Transição: Fornecimento do produto para o usuário (fabricação, distribuição e treinamento). Foco na implantação.
 
 ### Diagrama de Caso de Uso
 
+- CASO DE USO
+    - Um caso de uso especifica o comportamento de um sistema ou parte de um sistema e é uma a descrição de uma sequencia de ações.
+    - Representação das funcionalidades do sistema visíveis externamente e dos elementos externos.
+    - Representa quem faz o que (interação) com o sistema sem considerar comportamento interno do sistema, ou seja, o que o sistema faz, e não como ele faz.
+    
+    - OBJETIVOS
+        * Identificar entidades relevantes, como se relacionam e como se comportam
+        * Ser passível de compreensão tanto por desenvolvedores como por usuários
+        * Descrever o sistema sob uma perspectiva externa ( o que ele faz, não como faz)
+        * Ser completo, consistente e não ambíguo
+    
+    - DIAGRAMA
+    - O diagrama de caso de uso contém vários casos de uso. A quantidade exata de casos de uso obviamente depende da complexidade do sistema em desenvolvimento.
+    - Quanto mais complexo o sistema, maior a quantidade de casos de uso.
+
+    - DIMENSÕES
+        - Formato
+            * Diz respeito à estrutura utilizada para organizar a sua narrativa textual. Os formatos comumente utilizados são o contínuo, o numerado e o tabular
+                * "O Cliente chega ao caixa eletrônico e insere seu cartão, em seguida o sistema requisita a senha do Cliente. Após o Cliente fornecer sua senha"
+                * "Cliente insere seu cartão no caixa eletrônico. 2.Sistema apresenta solicitação de senha. 3.Cliente digita senha."
+        - Grau de detalhamento
+            * Varia de sucinto até detalhado (expandido).
+        - Grau de abstração
+            * Diz respeito a existência ou não de menção a aspectos relativos à tecnologia
+            * Ex: Para o caso de uso “realizar pedido”, pode ser por telefone, por e-mail, etc.
+
+    - ATORES
+        - Um caso de uso envolve a interação dos atores com o sistema.
+        - Um ator representa um conjunto de papéis que os usuários dos casos de uso desempenham na interação com esse caso.
+        - Corresponde a um papel representado no sistema (Ex: funcionário, cliente, fornecedor).
+        - Pode ser pessoas, organizações, outros sistemas ou equipamentos
+
+    - INDAGAÇÕES
+        - Quem utiliza o sistema?
+        - Quem instala e mantém o sistema?
+        - Que outros sistemas/dispositivos utilizam o sistema ou são utilizados por ele?
+        - Quem obtém informação do sistema?
+        - Quem provê informação ao sistema?
+        - O que o sistema faz automaticamente?
+
+    > Ator (boneco)--------{reservar livro}
+
+    - TIPOS DE CASOS DE USO
+        - Caso de uso primário
+            * São os que representam os objetivos dos atores
+
+        - Caso de uso oposto
+            * É o que “desfaz” outro (Ex: cancelar pedido)
+
+        - Caso de uso temporal
+            * Caso de uso temporal são os disparados pelo sistema e não por um ator (Ex: o sistema realiza de forma automatica).
+
+        - Caso de uso secundário
+            * Os secundários são os que não trazem benefício direto aos atores, mas são necessários para que o sistema funcione corretamente (Ex: manutenção de cadastro; de usuários).
+    
+    - TÉCNICAS BÁSICAS DE MODELAGEM
+        - Identificar os atores que interagem com o sistema.
+        - Organize os atores, identificando papéis gerais e mais específicos.
+        - Para cada ator considere as formas primárias que o ator interage com o sistema.
+        - Considere também as formas excepcionais em que cada ator interage com o sistema.
+        - Organize esses comportamentos como um caso de uso.
+        - Descreva o fluxo de eventos de maneira que permita compreendê-lo com facilidade.
+
+    - EXERCÍCIO:
+        - Vários projetos são realizados em uma empresa. Os cem empregados da empresa trabalham em pelos menos um projeto. Há um sistema implantado na empresa que permite aos participantes que estão alocados em um determinado projeto marcarem suas horas de trabalho. Esse sistema também permite que os gerentes de cada projeto, ao fim do mês, gerem relatórios com os totais de horas trabalhadas de cada participante
+        * Quantos são os atores?
+        * Quais seus papéis?
+        * Quais os casos de uso?
+
+# ------------------------------------------------------------------------------------------------
+
+    - RELACIONAMENTOS
+        - O ator comunica-se com o sistema através do envio e recebimento de mensagens.
+        - Os relacionamentos podem ser de 4 tipos:
+            * Associação
+                - Indica que há uma interação (comunicação) ou relacionamento entre um caso de uso e um ator.
+            * Generalização/especialização
+                - Entre atores: Atores podem herdar, ou seja, um ator pode desempenhar os mesmos papéis que o outro, e também papéis adicionais.
+                - Entre casos de uso: Quando existem dois ou mais casos de uso com características semelhantes, mas com pequenas diferenças entre si. {abrir conta comum: abrir conta especial / abrir conta poupança}
+            * Inclusão <<include>>
+                - Utilizado quando existe uma situação ou rotina comum a mais de um caso de uso. (evitar repetição de caso de uso).
+                - Este tipo de relacionamento indica uma obrigatoriedade: Quando um determinado caso de uso tem um relacionamento de inclusão com outro, a execução do primeiro obriga a execução do segundo.
+            * Extensão <<extensão>>
+                - São utilizadas para descrever cenários opcionais de um caso de uso.
+                - Ocorrem em situação específica onde determinada condição deve ser satisfeita. Assim, diferente da relação de inclusão, a relação de extensão nem sempre deverá ser executada.
+
+    - Extensão x Inclusão
+        * Extensão <<extends>> indica que, em certas situações, ou em determinado momento, um caso de uso poderá ser “expandido” pela execução de outro.
+        * Inclusão <<include>> indica que um caso de uso incorpora a funcionalidade de outro caso de uso.
+
+    - CONCRETO ou ABSTRATO
+        * Concreto: iniciado diretamente por um Ator
+        * Abstrato: não iniciado diretamente por um ator, geralmente relacionado a outro caso de uso.
+
+- EXERCÍCIO 1: SISTEMA DE SAQUE DE DINHEIRO
+Identificar atores, casos de uso e tipos de relacionamentos entre eles.
+Para efetuar o saque do dinheiro, solicitado por um cliente, em uma ATM deverá ser necessário a validação do cartão pessoal do cliente, a validação da senha pessoal do cliente e se o saldo disponível na conta do cliente é suficiente para o saque solicitado.
+
+- EXERCÍCIO 2: SISTEMA EDITOR DE TEXTO
+Identificar atores, casos de uso e tipos de relacionamentos entre eles.
+Em um aplicativo de editor de texto ao se inserir um texto é possível verificar a ortografia do texto que está sendo inserido, alterar o template em questão e encontrar sinônimos para as palavras contidas no texto.
+
+# ------------------------------------------------------------------------------------------------
+
+- Um caso de uso deve descrever as funcionalidades de um sistema.
+
+- Em geral, cada passo do fluxo de um caso de uso descreve uma das seguintes situações:
+    i.uma interação entre um ator e o sistema
+    ii.uma ação que o sistema realiza para atingir o objetivo do ator
+    iii.uma ação que o sistema realiza para proteger os interesses de um interessado.
+
+- Um bom modelo contempla:
+    * Nome
+        - Nome do caso de uso
+    * Descrição
+        - Descrição sucinta, em um único parágrafo, descrevendo o objetivo do caso de uso
+    * Atores
+        - Nome dos atores primários (aqueles que iniciam a execução) e dos atores secundários (aqueles que participam ou executam em uma determinada circunstância)
+    * Pré-condições
+        - Condições a serem atendidas antes da execução. Caso não sejam, o caso de uso não pode ser executado
+    * Pós-condições
+        - O que deve ser verdadeiro após a execução, considerando que o fluxo é realizado com sucesso
+    * Fluxo básico
+        - Descreve a sequência de passos a serem realizados em situação normal (quando tudo dá certo)
+    * Fluxo alternativo
+        - Descreve a sequência de passos alternativa (geralmente devido a uma escolha do usuário)
+    * Fluxo de exceção
+        - Se refere ao tratamento de erros durante a execução
+        - Observa-se que a maioria das exceções ocorre nos passos em que alguma informação é incluída no sistema pelos atores. Isso porque, quando isso ocorre, muitas vezes, realizam-se validações. Quando uma dessas validações falha, ocorre uma exceção
+    * Regras de negócio
+        - Lista de requisitos atendidos (funcionais ou não funcionais)
+    * Classes / entidades
+        - Relação de classes necessárias no caso de uso
+
+| Títulos | Descrição dos títulos |
+| ------ | ------ |
+| Nome | Efetuar Saque |
+| Descrição | Este caso de uso permite que um cliente do banco efetue um saque, retirando dinheiro de sua conta bancária. |
+| Atores | Cliente |
+| Pré-condição | O caixa automático deve estar conectado ao sistema bancário. |
+| Pós-condição | O saque é efetuado gerando débito do valor na conta do cliente e entregando o mesmo valor, em espécie, ao cliente. |
+| Regras de negócio | RF01, RN01, RNF01, RNF02 |
+| Classes | Cliente, Conta, Cartão, Transação, Saque |
+|Fluxo básico | O cliente insere seu cartão no caixa automático, que analisa o cartão e verifica se ele é aceitável. |
+|| Se o cartão é aceitável, o caixa automático solicita que o cliente informe a senha. |
+|| O cliente informa a senha. |
+|| O caixa automático envia os dados do cartão e da senha para o sistema bancário para validação. |
+|| Se a senha estiver correta, o caixa solicita que o cliente informe o tipo de transação a ser efetuada. |
+|| O cliente seleciona a opção saque e o caixa solicita que seja informada a quantia. |
+|| O cliente informa a quantia a ser sacada. |
+|| O caixa envia uma requisição para o sistema bancário para que seja efetuado um saque na quantia especificada pelo cliente. |
+|| Se o saque é autorizado, as notas são separadas e liberadas. |
+| Fluxo alternativo | Cancelamento: O cliente pode cancelar a transação a qualquer momento, desde que o saque ainda não tenha sido autorizado pelo sistema bancário. |
+| Fluxo de exceção | O cartão não é aceitável: Se o cartão não é aceitável (porque a tarja magnética não pode ser lida ou porque é de um tipo de cartão desconhecido), uma mensagem de erro de leitura é mostrada e o cartão é liberado. |
+|  | Senha incorreta: Se a senha informada está incorreta, uma mensagem deve ser mostrada para o cliente que poderá entrar com a senha novamente. Caso o cliente informe três vezes senha incorreta, o cartão deverá ser bloqueado. |
+|  | Saque não autorizado: Se o saque não for aceito pelo sistema bancário, uma mensagem deve ser exibida e a operação deve ser cancelada. |
+|  | Não há dinheiro suficiente disponível no caixa eletrônico: Nesse caso, uma mensagem de erro é exibida e a operação deve ser cancelada. |
+
+- RF01 : O sistema de caixa automático deve permitir que clientes efetuem saques em dinheiro.
+- RN01 : Não devem ser permitidas transações que deixem a conta do cliente com saldo negativo.
+- RNF01 : O sistema de caixa automático deve estar integrado ao sistema bancário
+- RNF02 : As operações realizadas no caixa automático devem dar respostas em até 10s a partir da entrada de dados.
 
 
+- EXERCÍCIO 1: DESCRIÇÃO DE CASO DE USO
+    * Com base no diagrama de caso de uso do jogo de forca, descrever o caso de uso “Manter Tema”, utilizando a estrutura recomendada na disciplina.
+    * adm ----- {manter tema}
+    * adm ----- {manter banco de palavras}
+    * jogador ----- {iniciar jogo}
+    * jogador ----- {realizar jogada}
+    * jogador ----- {incluir nome no painel de pontuação}
+
+# ------------------------------------------------------------------------------------------------
 
 
 ### Diagrama de Atividades
