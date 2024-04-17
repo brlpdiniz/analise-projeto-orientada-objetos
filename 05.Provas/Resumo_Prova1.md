@@ -545,6 +545,23 @@ Em um aplicativo de editor de texto ao se inserir um texto é possível verifica
 
 ### Diagrama de Atividades
 
+- Representam o fluxo de atividades dos processos de negócio
+- Mostra o fluxo de uma atividade para outra
+- Maneira alternativa de representar interações, podendo expressar como as ações são executadas, o que elas fazem, quando elas são executadas, e onde elas acontecem
+    - Objetivos:
+        * Capturar as ações que serão executadas quando uma operação é disparada;
+        * Mostrar como um negócio funciona em termos de atores, fluxos de trabalho, organização e objetos.
 
-
-
+    - Componentes:
+        * Estado Inicial (bolinha preenchida)
+        * Estado Final (bolinha dentro da outra)
+        * Ação ou atividade (retângulo)
+        * Decisão (prisma)
+        * Gatilho ou arco (---->)
+        * Bolinha com X no meio (atividade termina naquela situação e vai seguir de outro ponto)
+    
+    - Raias:
+        * Permite que se documente o que acontece e quem faz acontecer;
+        * Permite que, em modelagem de domínio, o diagrama de atividade represente pessoas ou departamentos responsáveis por cada atividade.
+        * Para usar raias, você deve organizar seus diagramas de atividades em zonas verticais separadas por linhas.
+    
