@@ -35,6 +35,21 @@
 
     > Classes não são Objetos, mas a estrutura de um Objeto
 
+
+    Classe Cachorro {
+        Atributos {
+            raça:
+            cor:
+            altura:
+        }
+        Métodos {
+            fazerCocô()
+            crescer()
+            latir()
+        }
+        return Objeto (conjunto de Atributo e Método)
+    }
+
 - EXERCÍCIO 1: Identifique as classes, atributos e métodos do cenário abaixo:
     João controla todo o gasto mensal da sua conta de luz em uma planilha eletrônica.
     Para cada conta de luz ele registra: data em que a leitura do relógio de luz foi realizada, número da leitura, quantidade de Kw gasto no mês, valor a pagar pela conta e data do pagamento.
@@ -172,10 +187,130 @@
         - Modelagem do sistema;
         - Desenvolvimento das funcionalidades.
 
-    - 
+    - Sendo assim....
+        - O mapeamento e entendimento completo dos requisitos é fundamental para se obter um sistema e um processo de desenvolvimento de qualidade.
+        - O sistema deve ser desenvolvido de maneira a evoluir para atender necessidades futuras eminentes dos usuários, mesmo que não seja um requisito claro por parte deles.
+        - O objetivo do requisito é que seja completo o suficiente para que o desenvolvimento possa ser realizado e que se possa validar com o usuário se o que está sendo entregue é o que foi solicitado, e se atende sua necessidade.
+    
+    1. Requisitos Funcionais (RF)
+        - Funcionalidade (funções que o sistema deve realizar)
+        - Serviços (que se espera que o sistema faça)
+    2. Requisitos Não Funcionais(RNF)
+        - Qualidade
+        - Tipos:
+            * Requisitos do Produto:
+                - Especificam o comportamento do software (ex.: eficiência, desempenho, segurança, portabilidade, usabilidade, confiabilidade).
+                - “A base de dados deve ter acesso apenas de usuários autorizados”.
+            * Requisitos Organizacionais:
+                - Consequência de políticas e procedimentos das empresas (ex.: padrões do cliente)
+                - O processo de desenvolvimento deve estar de acordo com normas ISO 9126”.
+                - O prazo de entrega final do sistema é de 3 meses”.
+            * Requisitos Externos:
+                - Derivados do ambiente ou fatores externos ao sistema (ex.: legislação)
+                - O sistema deverá se comunicar com o SQL Server” (interoperabilidade).
+                - O sistema deverá atender às normas legais, tais como padrões, leis, etc” (legal).
+                - O sistema não apresentará aos usuários quaisquer dados de cunho privativo” (ético).
+    
+    - Requisitos Técnicos
+        - Recursos necessários para que a aplicação possa operar, tais como processamento, memória, armazenamento, link de comunicação.
+        * COMPATIBILIDADE: aplicação deve rodar independente da arquitetura e do dispositivo que a esteja hospedando.
+        * DISPONIBILIDADE: Que tipo de informação é necessário acesso em tempo real?
+            - Que tipo de informação pode haver um atraso? Qual o tamanho deste atraso?
+        * ARMAZENAMENTO: •Por quanto tempo registros antigos devem ser mantidos?
+    
+    - Requisitos Ambientais
+        - AMBIENTE SOCIAL: Fisicamente próximas? Existe necessidade de colaboração de dados?
+            - Síncrono ou assíncrono? Como será a comunicação?
+        - AMBIENTE ORGANIZACIONAL: Hierarquia, Estrutura técnica (funcionários e equipamentos)
+            - Implantação de projetos, Investimentos em tecnologia?
+        - AMBIENTE TÉCNICO: Quais são as tecnologias utilizadas? O que precisa manter a compatibilidade?
+            - Limitações tecnológicas?
 
+    - Atividade: Identifique os requisitos funcionais e não funcionais:
+        - “Um aplicativo de celular de emissão de passagens vende passagens de trem e avião. Quando o usuário entra no aplicativo, um menu com os possíveis destinos é mostrado ao usuário, junto com uma mensagem para que o usuário selecione um destino. Os usuários podem escolher seu destino a partir dessa lista. Os destinos sugeridos devem ser organizados de maneira a facilitar a escolha pelo usuário. Após a escolha do destino, o sistema deve responder prontamente se há poltrona disponível. Somente após essa verificação é solicitado ao usuário que informe o número de seu cartão de crédito e o código de segurança. O cartão é validado. Quando a transação de crédito é validada, a passagem é emitida. O formato do bilhete de passagem deve seguir o padrão definido pelo Sistema Nacional de Tráfego Ferroviário ou pelo Sistema Nacional de Tráfego Aéreo, a depender do transporte escolhido”.
 
+------------------------------------------------------------------------------------------------
 
+- Técnicas de levantamento de requisitos
+    - Objetivo:
+        - Ajudar os analistas de sistemas e negócio na condução do levantamento de requisitos do sistema.
+    - Atividades envolvidas:
+        - Identificar os objetivos
+        - Selecionar o público alvo adequado
+    - Qual técnica usar? Analisar:
+        - Recursos disponíveis($$$)
+        - Tempo disponível(para execução e compilação de resultados)
+        - Disponibilidade de usuários(presencial, remota etc)
+    - Técnicas de levantamentov:
+        - Entrevistas
+            * Obter informações que não são registradas e estão concentradas em algumas pessoas.
+            * Obter a opinião das pessoas sobre o sistema.
+            - Recomendações
+                - Não atrase.
+                - Explique o objetivo da pesquisa para conquistar a confiança do entrevistado.
+                - Escute mais que pergunte.
+                - Vá preparado. Evite ler as perguntas do roteiro.
+                - Tomar notas durante a entrevista.
+                - Fazer o relatório da visita e validar as informações.
+        - Questionário
+            * É um formulário que pode ser distribuído impresso ou on-line com perguntas que os usuários e demais participantes.
+            * Otimizar o entendimento do processo se um grande número de pessoas deve ser entrevistado e não há recursos para entrevistá-las individualmente.
+            * Quando há diversos grupos de usuários que podem estar em localizações geográficas diferentes.
+            > Inclua sempre uma alternativa “sem opinião”.
+            > Não sei responder.
+        - Observação
+            * O observador é inserido no ambiente de trabalho onde a solução será usada observando o trabalho cotidiano e tomando notas das tarefas em execução nas quais as partes interessadas estão envolvidas.
+            * Quando usar?
+                - Para avaliar o processo de trabalho existente.
+                - Para melhorar ou modificar o sistema atua.
+                - Descobrir problemas de performance.
+                - Confirmar dados recolhidos na entrevista.
+            * Recomendações:
+                - Deve ocorrer preferencialmente em um período em que o serviço seja caracterizado como normal, para não haver distorções;
+                - O observador deve colocar-se no ambiente sem interferir,
+                - O observador não deve fiscalizar o trabalho;
+        - Reunião
+            * Comunicação direta entre as partes interessadas
+            * Integração do grupo em torno do mesmo assunto, formando uma equipe de trabalho
+            * Coleta de sugestões e críticas da equipe
+            * Quando usar?
+                - obter uma resposta rápida de várias pessoas sobre um determinado assunto;
+                - para resolução de problemas ou questões a serem esclarecidas, compartilhadas com os demais participantes;
+                - para envolver o grupo da tomada de decisão;
+                - para resolver situações de conflito (busca de consenso);
+            * Recomendação:
+                - Não defender suas ideias ao extremo; não mostrar contrariedade; não mudar de opinião para evitar conflitos
+        - Brainstorming
+            * “tempestade de ideias”
+            * Gerar ideias e selecionar
+            * Explicar as regras:
+                - Não critique!
+                - Não avalie!
+                - Seja aberto a todas as ideias, mesmo aquelas que parecerem malucas.
+                - Escrever as ideias dos participantes no quadro.
+        - Cenários
+        - Protótipos
+
+    - QUAIS OS PROBLEMAS NO LEVANTAMENTO DE REQUISITOS?
+        - NÃO VER O TODO: REQUISITOS AUSENTES OU SUBENTENDIDOS.
+        - FALTA DE COMPLETUDE OU INCONSISTÊNCIA.
+        - FALTA DE CLAREZA, PERMITINDO INTERPRETAÇÕES DÚBIAS.
+        - FALTA DE DEFINIÇÃO CLARA DE RESPONSABILIDADES.
+        - FALTA DE ENVOLVIMENTO DO USUÁRIO.
+        - DIFICULDADE PARA ENTENDER O PROBLEMA.
+        - MUDANÇA DE OBJETIVOS.
+        - FUNCIONALIDADES ADICIONAIS AOS REQUISITOS. (XÍCARA DE OURO)
+
+    - Em relação às fontes de informação
+        - Stakeholders
+            * Disponibilidade / Restrições de contato
+        - Sistema atual
+            * Disponibilidade para consulta / Documentação / Manual.
+        - Perspectivas de futuro
+        - Leis / Regulamentações
+        - Normas
+            * O que deve ser seguido
+        - Regras da organização
 
 ### Projeto OO e UML
 
